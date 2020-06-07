@@ -1,15 +1,7 @@
-from django.contrib import messages
-from django.http import HttpResponseRedirect, Http404
 from django.shortcuts import render
-
-import os
-import re
+from django.contrib.staticfiles.storage import staticfiles_storage
 import json
 import random
-
-from sample_project.settings import STATIC_DIR
-from django.contrib.staticfiles.storage import staticfiles_storage
-
 
 def read_json(file_):
     with open(file_, "r") as f:
