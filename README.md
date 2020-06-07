@@ -8,3 +8,7 @@ This app lets you cycle over random quotes by Alan Watts (a famous 1960s philoso
 - You can run the app using `python manage.py runserver` and access it at http://127.0.0.1:8000.
 - It has also been hosted at https://limitless-coast-11574.herokuapp.com/
 
+
+#### Sample output 
+
+![](https://github.com/abhiramr/django-sample-project/blob/master/sample_project/static/outputs/sample_output.gif)
