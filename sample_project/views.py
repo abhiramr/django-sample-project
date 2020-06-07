@@ -1,0 +1,38 @@
+from django.contrib import messages
+from django.http import HttpResponseRedirect, Http404
+from django.shortcuts import render
+
+import os
+import re
+import json
+import random
+
+from sample_project.settings import STATIC_DIR
+from django.contrib.staticfiles.storage import staticfiles_storage
+
+
+def read_json(file_):
+    with open(file_, "r") as f:
+        datastore = json.load(f)
+    return datastore
+
+
+quotes_file = staticfiles_storage.url("data/alan_watts_quotes.json")
+quotes_json = read_json(quotes_file)
+
+
+def get_quote_details(quoteid):
+    return quotes_json[quoteid]["quote"]
+
+
+def index(request):
+    if request.method != "POST":
+        return render(request, "index.html", {"quotes_": quotes_json})
+
+
+def quotes(request):
+    if request.method != "POST":
+        no_of_quotes = len(quotes_json)
+        quote_num = random.randint(0, no_of_quotes - 1)
+        quote = get_quote_details(quote_num)
+        return render(request, "quotes.html", {"quotes_": quote})
