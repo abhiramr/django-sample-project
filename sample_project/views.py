@@ -3,6 +3,7 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 import json
 import random
 
+
 def read_json(file_):
     with open(file_, "r") as f:
         datastore = json.load(f)
