@@ -1,6 +1,6 @@
 # README
 
-This app lets you cycle over random Alan Watts (a famous 1960s philosopher who championed stoicism and the ancient 'dao' philosophy of the Buddhists) quotes from a static asset JSON file that can be updated to reflect appropriate changes.
+This app lets you cycle over random quotes by Alan Watts (a famous 1960s philosopher who championed stoicism and the ancient 'dao' philosophy of the Buddhists) from a static asset JSON file that can be updated to reflect appropriate changes.
 
 - Clone this repository.
 - Create a virtual environment using virtualenv or Anaconda and activate it.
