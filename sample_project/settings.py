@@ -25,8 +25,7 @@ SECRET_KEY = "r@x)wwm4qc)&8@wo@ra32+q_c7ldw4kj5a9tn*%h!)3$cw3vd9"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1","limitless-coast-11574.herokuapp.com"]
-
+ALLOWED_HOSTS = ["127.0.0.1", "limitless-coast-11574.herokuapp.com"]
 
 
 # Application definition
@@ -39,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "sample_project",
-    "analytical"
+    "analytical",
 ]
 
 MIDDLEWARE = [
@@ -55,7 +54,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = "sample_project.urls"
 
 
-GOOGLE_ANALYTICS_GTAG_PROPERTY_ID = 'UA-6285208-4'
+GOOGLE_ANALYTICS_GTAG_PROPERTY_ID = "UA-6285208-4"
 
 TEMPLATES = [
     {
