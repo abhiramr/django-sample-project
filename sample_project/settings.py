@@ -55,7 +55,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = "sample_project.urls"
 
 GOOGLE_ANALYTICS = {
-    'google_analytics_id': ' UA-6285208-4',
+    'google_analytics_id': 'UA-6285208-4',
 }
 
 TEMPLATES = [
