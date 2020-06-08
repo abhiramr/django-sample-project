@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "sample_project"
+    "sample_project",
+    "google_analytics"
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "sample_project.urls"
+
+GOOGLE_ANALYTICS = {
+    'google_analytics_id': ' UA-6285208-4',
+}
 
 TEMPLATES = [
     {
