@@ -15,7 +15,7 @@ quotes_json = read_json(quotes_file)
 
 
 def get_quote_details(quoteid):
-    return quotes_json[quoteid]["quote"]
+    return quotes_json["quotes"][quoteid]
 
 
 def index(request):
@@ -25,7 +25,7 @@ def index(request):
 
 def quotes(request):
     if request.method != "POST":
-        no_of_quotes = len(quotes_json)
+        no_of_quotes = len(quotes_json["quotes"])
         quote_num = random.randint(0, no_of_quotes - 1)
         quote = get_quote_details(quote_num)
         return render(request, "quotes.html", {"quotes_": quote})
