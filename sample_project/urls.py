@@ -21,7 +21,7 @@ from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    re_path('djga/', include('google_analytics.urls')),
     url("^[/]?$", views.index, name="index"),
-    url("^[/]quotes.html?$", views.quotes, name="quotes"),
-    re_path('djga/', include('google_analytics.urls'))
+    url("^[/]quotes.html?$", views.quotes, name="quotes")
 ]

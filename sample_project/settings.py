@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'django.contrib.sites',
     "sample_project",
     "google_analytics"
 ]
@@ -53,6 +54,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "sample_project.urls"
+
 
 GOOGLE_ANALYTICS = {
     'google_analytics_id': 'UA-6285208-4',
