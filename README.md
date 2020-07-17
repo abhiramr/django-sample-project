@@ -11,7 +11,9 @@ This app lets you cycle over random quotes by Alan Watts (a famous 1960s philoso
 - PS : You might need to install `python3-devel` and `gcc`
 
 `sudo apt update`
+
 `sudo apt install python3-devel --fix-missing`
+
 `sudo apt install gcc --fix-missing`
 
 #### Sample output 
